@@ -1,0 +1,26 @@
+{
+  "name": "project-template",
+  "version": "1.0.0",
+  "description": "# Setup",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "concurrently": "^4.1.2",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.1",
+    "mongoose": "^5.8.9",
+    "react-router-dom": "^5.1.2"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"nodemon server.js\" \"cd client && npm start\"",
+    "start": "node server.js",
+    "postinstall": "cd client && npm i && npm run build"
+  },
+  "author": "",
+  "license": "ISC"
+}
