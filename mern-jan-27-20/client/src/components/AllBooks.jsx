@@ -43,7 +43,7 @@ onChangeForm = (event) => {
         const bookListElement = this.state.bookList.map((book) => {
             return(
                 <div>
-                <Link to={`/${book._id}`}><h1>{book.title}</h1></Link>
+                <Link to={`/${book._id}`} ><h1>{book.title}</h1></Link>
                 <h2>{book.author}</h2>
                 <h3>{book.date}</h3>
                 </div>
